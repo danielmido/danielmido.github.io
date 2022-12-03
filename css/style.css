@@ -1,0 +1,123 @@
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url(../img/header-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -200px;
+
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid #666;
+}
+
+/* Akhir Jumbotron */
+
+
+/* About */
+
+.about hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+.pKiri, .pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate((50px, 0));
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Akhir About */
+
+
+/* Portofolio */
+
+.portofolio {
+    background-color: #eee;
+}
+
+.portofolio hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+.portofolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.portofolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Akhir Portofolio */
+
+
+/* Contact */
+
+.contact {
+    min-height: 800px;
+}
+
+.contact hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+/* Akhir Contact */
+
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+
+    color: #eee;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+    padding-top: 30px;
+}
+
+footer p i {
+    color: salmon;
+}
+
+/* Akhir Footer */
+
+
+
+/* Body (Keseluruhan) */
+
+section {
+    min-height: 400px;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
