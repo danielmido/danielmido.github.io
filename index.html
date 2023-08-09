@@ -1,199 +1,365 @@
 <!DOCTYPE html>
-<html lang="en" id="home">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Portofolio</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<html lang="en">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
 
-    <!-- Navigation Bar -->
-    <nav class="navbar-inverse navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-                <a href="#home" class="navbar-brand page-scroll">Daniel Mido</a>
-            </div>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-            <!-- Give the link this <div> for better mobile experience -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about" class="page-scroll">About</a></li>
-                    <li><a href="#portofolio" class="page-scroll">Portofolio</a></li>
-                    <li><a href="#contact" class="page-scroll">Contact</a></li>
-                </ul>
-            </div>
+  <title>My Portfolio | Daniel Mido</title>
+</head>
+
+<body id="home">
+  <!-- Navbar -->
+  <nav class="fixed-top shadow-sm navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Daniel Mido</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
-    </nav>
-    <!-- Akhir NavBar -->
-
-    <!-- Jumbotron -->
-    <div class="jumbotron text-center">
-        <img src="img/Profile Picture.jpg" alt="Gambar" class="img-circle">
-        <h1>Daniel Mido</h1>
-        <p>Programmer | Web Developer</p>
+      </div>
     </div>
-    <!-- Akhir Jumbotron-->
+  </nav>
+  <!-- Akhir Navbar -->
 
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">About</h2>
-                    <hr>
-                </div>
-            </div>
+  <!-- Jumbotron -->
+  <section class="jumbotron text-center">
+    <img class="rounded-circle" width="200px" src="img/Profile Picture.jpg" alt="Profile Picture" />
+    <h1 class="display-4">Daniel Mido</h1>
+    <p class="lead"></p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,0L30,16C60,32,120,64,180,90.7C240,117,300,139,360,128C420,117,480,75,540,69.3C600,64,660,96,720,128C780,160,840,192,900,181.3C960,171,1020,117,1080,128C1140,139,1200,213,1260,224C1320,235,1380,181,1410,154.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Jumbotron-->
 
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-2">
-                    <p class="pKiri">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et tempora quia aperiam laboriosam sit, dicta fugiat saepe? Amet, vitae sit. Quasi tempore est itaque corporis. Vero numquam enim est.</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="pKanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas amet mollitia accusantium quas iure voluptate cumque, minus porro in consequatur, vel cum aliquid quis id vero corrupti est doloremque!</p>
-                </div>
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <!-- Judul About -->
+      <div class="row text-center mb-3">
+        <h2>About Me</h2>
+      </div>
+      <!-- Isi About -->
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magnam consequatur at
+          maiores voluptatum natus distinctio nostrum accusamus beatae amet autem!</div>
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Cumque qui nemo deserunt quis,
+          velit fugit odio officiis iste nihil obcaecati?</div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1"
+        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir About -->
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <h2>My Projects</h2>
+      </div>
+      <!-- Card Projects Line 1 -->
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img/projects/1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
             </div>
+          </div>
         </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img/projects/2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img/projects/3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card Projects Line 2-->
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img/projects/4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="img/projects/5.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="my-device">
+      <div class="container">
+        <div class="row text-center mb-4 mt-5">
+          <h2>My Device</h2>
+        </div>
+        <!-- Content -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="device-box">
+              <h4 class="device-name">Yoga Duet 7i</h4>
+              <img src="img/device/1.png" alt="Yoga Duet 7i" class="device-img">
+              <a href="#" class="device-detail-button btn btn-light">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Akhir About -->
 
-    <!-- Portofolio -->
-    <section class="portofolio" id="portofolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center">Portofolio</h2>
-                    <hr>
-                </div>
-            </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,96L48,133.3C96,171,192,245,288,234.7C384,224,480,128,576,80C672,32,768,32,864,53.3C960,75,1056,117,1152,133.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Projects-->
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/portofolio/1.jpg" alt="Grey">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/portofolio/2.jpg" alt="Coffee">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/portofolio/3.jpg" alt="Sand">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/portofolio/4.jpg" alt="Mushroom">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/portofolio/5.jpg" alt="Ice">
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="" class="thumbnail">
-                        <img src="img/portofolio/6.jpg" alt="Lake">
-                    </a>
-                </div>
-            </div>
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="container">
+      <div class="row mt-3 mb-5 text-center">
+        <h2>Gallery</h2>
+      </div>
+      <!-- Gallery Picture -->
+      <div class="row justify-content-center">
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/1.jpg">
+          </a>
         </div>
-    </section>
-    <!-- Akhir Portofolio -->
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-s-12 text-center">
-                    <h2>Contact</h2>
-                    <hr>
-                </div>
-            </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/2.jpg">
+          </a>
         </div>
-
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <form>
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input type="text" id="nama" class="form-control" placeholder="Masukan Nama">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">e-Mail</label>
-                        <input type="email" id="email" class="form-control" placeholder="Masukan e-Mail">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tel">No. Telp</label>
-                        <input type="tel" id="tel" class="form-control" placeholder="Masukan No. Telp">
-                    </div>
-
-                    <select class="form-control">
-                        <option>-- Pilih Kategori --</option>
-                        <option>Web Design</option>
-                        <option>Web Development</option>
-                    </select>
-                    <br>
-
-                    <div class="form-group">
-                        <label for="pesan">Pesan</label>
-                        <textarea class="form-control" rows="10" placeholder="Masukan Pesan"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-                </form>
-            </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/3.jpg">
+          </a>
         </div>
-    </section>
-    <!-- Akhir Contact -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>&copy; Copyright 2022 | Build with <i class="glyphicon glyphicon-heart"></i> by <a href="https://www.youtube.com/channel/UC3fR-vqdZdwmQgXjYASrmHQ" target="_blank">Daniel Mido</a></p>
-                </div>
-            </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/4.jpg">
+          </a>
         </div>
-    </footer>
-    <!-- Akhir Footer-->
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/5.jpg">
+          </a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/6.jpg">
+          </a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/7.jpg">
+          </a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/8.jpg">
+          </a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/9.jpg">
+          </a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <a href="#">
+            <img class="img-fluid gallery-img" src="img/thumbnail/10.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Gallery -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <!-- Form Inside -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Alert -->
+          <div class="mt-3 my-alert d-none alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Thanks!</strong> Pesan kamu udah saya terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <!-- Forms -->
+          <form name="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" name="nama" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="pesan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0d6efd" fill-opacity="1"
+        d="M0,160L48,154.7C96,149,192,139,288,128C384,117,480,107,576,106.7C672,107,768,117,864,149.3C960,181,1056,235,1152,261.3C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Contact -->
+
+  <!-- Footer -->
+  <footer class="pb-5 bg-primary text-white text-center">
+    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a target="_blank" class="text-white fw-bold"
+        href="https://www.youtube.com/channel/UC3fR-vqdZdwmQgXjYASrmHQ">Daniel Mido</a></p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS Script Init -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    const galleryImage = document.querySelectorAll('.gallery-img');
+
+    galleryImage.forEach((img, i) => {
+      img.dataset.aos = 'fade';
+      img.dataset.aosDelay = i * 50;
+    });
+
+    AOS.init({
+      once: true,
+      duration: 2000,
+    });
+  </script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+  <!-- GSAP Registration -->
+  <script>gsap.registerPlugin(TextPlugin);</script>
+
+  <!-- GSAP Setup -->
+  <script>
+    gsap.to('.lead', { duration: 2, delay: 0.5, text: 'Programmer | YouTuber' })
+  </script>
+
+  <!--
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.6.1.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    End of GSAP Js.......
 
-    <script src="js/script.js"></script>
-  </body>
+
+  -->
+
+  <!-- Tilt Js -->
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".device-box"), {
+      max: 20,
+      speed: 2000,
+      glare: true,
+    });
+  </script>
+
+  <!-- Script Contact Form -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxEhdItk6HUuRGVZHKScHY0pSHkWRlHBIOMbvuzku56ANTlv_JjO2P2SQ4ZwrbPSW4/exec'
+    const form = document.forms['contact-form'];
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // ketika tombol submit di-klik
+      // tampilkan tombol loading, hilangkan tombol kirim
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // tampilkan tombol kirim, hilangkan tombol loading
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          // tampilkan alert
+          myAlert.classList.toggle('d-none');
+          // reset form
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
 </html>

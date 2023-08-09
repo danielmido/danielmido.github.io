@@ -1,0 +1,64 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+  padding-top: 5rem;
+}
+
+#contact,
+#about {
+  padding-top: 5rem;
+}
+
+/* My Device Section */
+
+.device-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.device-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s;
+}
+
+.device-box:hover .device-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.device-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 40px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.device-box:hover .device-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.device-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 40px);
+  max-width: 90%;
+  transition: 0.5s;
+}
